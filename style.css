@@ -36,7 +36,13 @@ body {
 }
 
 .name {
-  color: red;
+  color: #f05945;
+}
+
+.project-heading:link, .project-heading:visited, .project-heading:hover {
+  text-decoration: none;
+  color: #1597bb;
+  font-weight: bold;
 }
 
 
