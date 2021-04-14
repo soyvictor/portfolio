@@ -49,7 +49,11 @@ body {
 .project-heading:link, .project-heading:visited, .project-heading:hover {
   text-decoration: none;
   color: #1597bb;
-  font-weight: bold;
+  font-weight: 400;
+}
+
+.project-description {
+  line-height: .7rem;
 }
 
 

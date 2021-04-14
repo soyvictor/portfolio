@@ -3,65 +3,27 @@
 <head>
   <title>Victor's Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main-content">
       <p class="wave">👨🏻‍💻</p>
       <p>Hi, I'm <span class="name">Victor</span>.</p>
-      <p>HII believe that programming is a powerful tool that can be used to rapidly create solutions that improve society and make day to day life easier. I admire great web design, well thought out features, and good usability.</p>
-      <p>For inquiries, I can be contacted at victor@victorc.me. I live in California but am open to opportunities that require relocation.</p>
-
-
+      <p>I love to program because it is a powerful tool that can be used to rapidly create solutions that improve society and make day to day life easier. I admire great web design, well thought out features, and good usability.</p>
       <h3>Projects</h3>
 
-      <a href="restaurant.com" class="project-heading">Restaurant website: </a><span>A potential freelance project yet to launch.  It's goal is to provide any restaurant with a simple way to get a responsive website with ordering and payments features up and running fast.</span>
-      <br>
-      <div class="technologies">
-        <p><strong>Technologies used:</strong> Ruby on Rails, Javascript, media queries, CSS grid, Flexbox</p>
-        <p><strong>Integrations:</strong> Stripe payments API, Active Admin</p>
-      </div>
-      <img src="./assets/restaurant.png" alt="" height="350">
-      <br><br><br><br>
+      <p class="project-description"><a href="restaurant.com" class="project-heading">food ordering website: </a><span>a quick and inexpensive way to set up online food ordering.</span></p>
 
-      <a href="https://victor-stuff-for-sale.herokuapp.com/" target="_blank" class="project-heading">Personal website for selling my things: </a><span>When I was still living in Mexico City and moving, I created this personal website to list everything I was selling.</span>
-      <br>
-      <div class="technologies">
-        <p><strong>Technologies used:</strong> Ruby on Rails, Javascript, media queries, CSS grid, Flexbox</p>
-      </div>
-      <p>A few months before I moved out of Mexico City, I decided to build a site for listing everything that I would be selling and figured this would help me practice javascript fundamentals.  I decided to model my site after Craigslist and to see if I could come close to it's design.  The end result that I was going for was simple but functional.    </p>
-      <img src="./assets/for_sale.png" alt="" height="400">
-      <br><br><br><br>
+      <p class="project-description"><a href="https://victor-stuff-for-sale.herokuapp.com/" target="_blank" class="project-heading">craigslist clone</a>: <span>a personal website to list everything I'm selling.</span></p>
 
-      <a href="https://wordsplash.herokuapp.com/" class="project-heading" target="_blank">Wordsplash: </a><span>A flashcards app for learning Spanish vocabulary that I built for myself.</span>
-      <br>
-      <p>Technologies used: Ruby on Rails, Javascript, media queries, CSS grid, Flexbox, Microsoft Translator API, Bing Images Search API</p>
-      <p>APIs used: Microsoft Translator API, Bing Images Search API</p>
-      <img src="./assets/wordsplash.png" alt="" height="400">
-      <br><br><br><br>
+      <p class="project-description"><a href="https://wordsplash.herokuapp.com/" class="project-heading" target="_blank">Wordsplash: </a><span>a flashcards app for learning Spanish or English vocabulary.</span></p>
 
-      <a href="http://www.streety.mx" class="project-heading" target="_blank">Streety: </a><span>An MVP for finding great street food in Mexico City.  (Mobile only.  Lead developer on this group project with T.J. Zuvic and Rodrigo Sanchez at Lewagon)</span>
-      <br>
-      <p>Technologies used: Ruby on Rails, Javascript, background jobs & sidekiq </p>
-      <p>Integrations: Mapbox, Google Text to Speech API </p>
-      <img src="./assets/restaurant.png" alt="" height="400">
-      <p>For our second group project at Lewagon, I came up with the idea of a web app for finding great, locals recommended, street food.  I find that as travelers in a new country, we sometimes hold ourselves back from trying new foods, particularly street food, because it's often something we're unfamiliar with, we don't know what to order, or even how to order which is often the case when we don't speak the local language.  For this project, being our second and final project, I really went into it with the intention of learning as much as I possibly could before the bootcamp ended so that I could take full advantage of having the expertise of the teachers by my side.</p>
-      <p>Like our first project, Just Ride, we spent a ton of time working out our core features, writing out our database schema, and doing our low fidelity mockups.  Some initial core features ended up being search, mapped results, and a menu for each food stall.  But I wasn't satisfied with just basic features.  We came up with a bunch more ideas and in the end, we added in features for "bookmarks", "recommendations", "local recommended", a current location finder for the search, a QR code scanner, and finally what I'm most proud of is sound bites for how to pronounce in Spanish each stall's menu items.</p>
-      <p></p>
-      <br><br><br><br>
+      <p class="project-description"><a href="http://www.streety.mx" class="project-heading" target="_blank">Streety: </a><span>a way to find great street food in Mexico City.</span></p>
 
-      <a href="https://justride.herokuapp.com/" class="project-heading" target="_blank">JustRide: </a><span>A peer to peer marketplace for renting motorcycles.  (Desktop only.  lead developer on this group project with T.J. Zuvic and Rodrigo Sanchez at Lewagon)</span>
-      <p>Technologies used: Ruby on Rails, Javascript</p>
-      <p>Integrations: Mapbox</p>
-      <p>My first project, which was a group project at Lewagon was to create an Airbnb type marketplace.  We could choose any idea we wanted as long as it had a booking feature.  After brainstorming ideas for a while, I decided on motorcycles.  I hadn't ridden a motorcycle in 5 years and every once in a while, the urge would come.  There was a particular motorcycle I was itching to try (the popular Kawasaki Ninja 400) but of the few rental companies I could find, none had it.  I was sure plenty of people owned the bike and some wouldn't mind making a bit of money on the side by renting it out.  Plus the cost to rent any motorcycle in those places was prohibitively expensive. Fortunately for me, my group members liked the idea and off we went.</p>
-      <p>We started by spending the greater part of a day listing out the features we would try to implement, approaching this project as building an MVP.  Those core features would be booking, searching, and a show page for each motorcycle.  Next, we mapped and drew our database schema to give us a solid foundation for how we would approach the backend.  Once we had that sorted out, and given the time crunch of the coding bootcamp, we decided to use a tool I was already familiar with for doing low fidelity mockups: Balsamiq.  I mocked up page by page our website, drawing some inspiration from other websites, and deciding to keep the design clean and simple.  Admittedly, we had spent a lot of time preparing before we had even written a line of code, but this ended up being highly beneficial as we had few hiccups along the way once we got to coding. </p>
-      <p>I started off by building the backend and making sure the core models, controllers, views, and database were set up and working properly.  Then I worked on the design of the homepage trying my best to make it look nice and inviting.  I find that getting the hompage done, at least a working version, in the early stages of a project really fuels up motivation and gives me a good sense of what direction I want the general design to go in.  After the homepage, I worked on the show page and booking feature.  The part that had me scratching my head the most was how to set up an "upcoming bookings" page and a "past bookings" page, both for the host (motorcycle owner) and the customer.  I ended up creating more booking controller actions to separate host bookings and client bookings, and then creating separate pages and tabs in the UI.  My teammate T.J. tackled the search and search results pages, integrating Mapbox's API to display search results on a map as markers, and I assisted by updating the UI to match with the rest of the site.  All in all, I learned a ton from doing this project and it was really our first attempt of taking everything we had learned up until that point and putting it together into a viable product.  Since this project, I've been hooked on web development. </p>
-
-      <img src="./assets/justride.png" alt="" height="400">
+      <p class="project-description"><a href="https://justride.herokuapp.com/" class="project-heading" target="_blank">JustRide: </a><span>A peer to peer marketplace for renting motorcycles.</span></p>
 
 
-
-
+      <p style="margin-top: 64px">👋 Drop me a line at <a href="mailto:victorc@victorc.me">victorc@victorc.me</a>.</p>
     </div>
     <footer class="footer">© 2021 Victor Chiang</footer>
     <script src="./portfolio.js"></script>
