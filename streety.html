@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Victor's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2ee27894e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-content">
+<!--       <h1 style="color: #1597bb">Projects <i class="fas fa-arrow-alt-circle-right" style=""></i> <span style="font-family: lato; color: #376977; background-color: #ffd260; padding: 4px 20px; box-shadow: .5px .5px 10px rgba(0, 0, 0, .1)">Streety</span></h1> -->
+<h1 style="color: #1597bb">Streety</h1>
+<!-- <h1 style="color: #1597bb">Projects <i class="fas fa-arrow-alt-circle-right" style=""></i> Streety</h1> -->
+      <a href="https://www.streety.mx" class="website-link" target="_blank"><i class="fas fa-globe-americas"></i> Website (mobile only)</a>
+      <a href="https://github.com/Tzuvic/streety" class="website-link" target="_blank"><i class="fab fa-github"></i> Github</a>
+      <h2 class="project-header">The Idea</h2>
+      <p>For our second and final group project at Lewagon, I came up with the idea of a web app for finding great, locals recommended, street food.  I find that as travelers in a new country, we sometimes hold ourselves back from trying new foods, particularly street food.  We may not know what to order, or even how to order which is often the case if we don't speak the local language.  I went into this project intending to build as many features as I could in order to learn as much as possible.</p>
+      <h2 class="project-header">Tech Stack</h2>
+      <!-- <p>Ruby on Rails, Javascript, Bootstrap, Cloudinary, Mapbox, Heroku</p> -->
+      <div style="display: inline-block">
+        <img src="./assets/logos/rails.png" alt="" class="stack-logo">
+        <p style="font-size: .6rem; margin: 0; padding: 0; text-align: center;">Rails</p>
+      </div>
+
+      <div style="display: inline-block">
+        <img src="./assets/logos/javascript.jpeg" alt="" class="stack-logo">
+        <p style="font-size: .6rem; margin: 0; padding: 0; text-align: center;">Javascript</p>
+      </div>
+
+      <div style="display: inline-block">
+        <img src="./assets/logos/bootstrap.png" alt="" class="stack-logo">
+        <p style="font-size: .6rem; margin: 0; padding: 0; text-align: center;">Bootstrap</p>
+      </div>
+
+      <div style="display: inline-block">
+        <img src="./assets/logos/cloudinary.png" alt="" class="stack-logo">
+        <p style="font-size: .6rem; margin: 0; padding: 0; text-align: center;">Cloudinary</p>
+      </div>
+
+      <div style="display: inline-block">
+        <img src="./assets/logos/mapbox.jpeg" alt="" class="stack-logo">
+        <p style="font-size: .6rem; margin: 0; padding: 0; text-align: center;">Mapbox</p>
+      </div>
+
+      <div style="display: inline-block">
+        <img src="./assets/logos/heroku.png" alt="" class="stack-logo">
+        <p style="font-size: .6rem; margin: 0; padding: 0; text-align: center;">Heroku</p>
+      </div>
+
+      <div style="display: inline-block">
+        <img src="./assets/logos/google-text-to-speech.png" alt="" class="stack-logo">
+        <p style="font-size: .6rem; margin: 0; padding: 0; text-align: center;">Google TTS</p>
+      </div>
+
+      <div style="display: inline-block">
+        <img src="./assets/logos/sidekiq.png" alt="" class="stack-logo">
+        <p style="font-size: .6rem; margin: 0; padding: 0; text-align: center;">Sidekiq</p>
+      </div>
+
+      <div style="display: inline-block">
+        <img src="./assets/logos/redis_cloud.png" alt="" class="stack-logo">
+        <p style="font-size: .6rem; margin: 0; padding: 0; text-align: center;">Redis Cloud</p>
+      </div>
+
+      <h2 class="project-header">Coding & Challenges</h2>
+      <p>Like with our first project, my group and I spent a lot of time planning our core features, database schema, and designs. Initial features included search, mapped search results, and a menu for each food stall.  The menu would have dishes listed in Spanish and descriptions in English.  To really stand out (and also to push ourselves), we added in a few more ideas:
+        <ul>
+          <li>bookmarks</li>
+          <li>user food stall recommendations</li>
+          <li>food dish likes</li>
+          <li>a "locals recommended" tag</li>
+          <li>searchbar current location finder</li>
+          <li>QR code scanner for menus</li>
+          <li>walking distances and times</li>
+          <li>sound bites for pronouncing each food name. (the feature I'm proud of most)</li>
+        </ul>
+      <p>An early challenge was designing our database schema.  It took time to figure out what models made sense and how we would create the associations between each one.  It forced us to go back and think more about the user journey.  To maintain a standard of quality with the food descriptions, our database would be set up to include all Mexican food categories and dishes; that is to say, they would not be user generated.  For the purposes of this student project, we only included a small number of dishes.</p>
+      <p>Bookmarks, walking distances and times, and sound bites were the most challenging features to build as they each had several moving pieces.</p>
+      <h3>Bookmarks</h3>
+      <p>Bookmarks was not overly challenging technically but it involved learning things I was not familiar with and understanding how each piece connected to the others.  To build the feature, I utilized helper methods, the js.erb file format, as well as the respond_to method, and turbolinks.  I also learned to load javascript files only on the relevant pages.</p>
+      <h3>Walking distances and times</h3>
+      <p>Implementing walking distances and times was an incredibly fun and rewarding experience.  I used the geocoder gem to transform food stall addresses into coordinates.  I originally planned for users to type in their location, but decided to also include a “get current location” option to simplify the user experience.  This was done by using browsers' native navigator.geolocation.getCurrentPosition() method.  Lastly, I used Mapbox’s API for calculating walking distance and times.</p>
+      <h3>Sound bites</h3>
+      <p>Sound bites was the final big feature, one that came close to being excluded due to time.  I was fortunate to receive help initially from the lead teacher at Lewagon.  I felt unsure about the best approach.  He provided some guidelines and even suggested I take the opportunity to build a background job with sidekiq (dev) and redis cloud (prod).  It was entirely unnecessary at this project’s scale, but I learned a lot.  I'm proud to say that I didn’t receive much hand holding when I got to coding as we both agreed it would be better if I tried on my own.</p>
+      <p>First I tested the Google Text to Speech API in my seed file and once I got the audio file to generate, I manually uploaded it to cloudinary to ensure they supported the audio file. I came to learn that Cloudinary will periodically and automatically delete files that are not part of the original deployment.  That was perfect as I could just use active storage to upload the sound bite files to a temporary folder.  I spent a day learning about jobs and then made sure I could get that to work in DEV using sidekiq.  The job would run as an after_create action each time a new food category or food item was created. I ran into an error with active storage not being able to upload audio files to Cloudinary, but after lots of troubleshooting, I found out from their technical support that I just needed to update their gem.  It was a wonderful moment when finally everything worked.  The final task was getting it to work in production with Heroku and understanding their dynos and the need to use redis cloud instead of sidekiq.</p>
+      <h2 class="project-header">Collaborators</h2>
+      <ul class="collaborators">
+        <li class="collaborators">Victor Chiang, lead developer</li>
+        <li class="collaborators">T.J. Zuvic, developer</li>
+        <li class="collaborators">Rodrigo Sanchez, developer</li>
+        <li class="collaborators"></li>
+      </ul>
+      <p>
+      <p></p>
+      <p></p>
+
+      <!-- <img src="./assets/justride.png" alt="" height="400"> -->
+      <!-- https://justride.herokuapp.com/ -->
+      <!-- <a href="https://justride.herokuapp.com/" class="project-heading" target="_blank">JustRide: </a><span>A peer to peer marketplace for renting motorcycles.  (Desktop only.  </span> -->
+
+
+    </div>
+    <footer class="footer">© 2021 Victor Chiang</footer>
+    <script src="./portfolio.js"></script>
+  </body>
+</html>

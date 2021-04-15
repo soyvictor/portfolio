@@ -49,7 +49,14 @@ body {
 .project-heading:link, .project-heading:visited, .project-heading:hover {
   text-decoration: none;
   color: #1597bb;
+  font-weight: 500;
+}
+
+.website-link:link, .website-link:visited, .website-link:hover {
+  text-decoration: none;
+  color: grey;
   font-weight: 400;
+  padding: 0px 4px;
 }
 
 .project-description {
@@ -67,18 +74,22 @@ body {
   display: inline-block;
 }
 
+.underline {
+   text-decoration: underline;
+}
+
 .project-header {
   /*text-decoration: underline;*/
   /*color: #1597bb;*/
 }
 
-ul {
+ul.collaborators {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li {
+li.collaborators {
   line-height: 1.4rem;
 }
 
@@ -92,4 +103,12 @@ li {
    50% { transform: rotate(4.0deg) }
    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
+}
+
+
+.stack-logo {
+  padding: 0px 2px;
+  width: 45px;
+  height: 45px;
+  /*background: linear-gradient( rgba(60, 60, 60, 0.1), rgba(60, 60, 60, 0.1) ), url("https://images.unsplash.com/photo-1558979159-2b18a4070a87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2551&q=80");*/
 }
