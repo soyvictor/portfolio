@@ -14,7 +14,7 @@ body {
   width: 860px;
   margin: 0px auto;
 /*  margin-top: 56px;*/
-  font-size: 18px;
+  font-size: 1.1rem;
   font-family: 'roboto', sans-serif;
   font-weight: 300;
 }
@@ -22,7 +22,7 @@ body {
 .technologies {
   /*padding-bottom: 0px;*/
   /*margin-bottom: 0px;*/
-  font-size: 16px;
+  font-size: 1rem;
   line-height: .4;
 }
 
@@ -34,7 +34,7 @@ body {
   flex-shrink: 0;
   text-align: center;
   padding: 8px 0px;
-  font-size: 14px;
+  font-size: .9rem;
 }
 
 .main-content a, a:hover, a:visited {
@@ -65,7 +65,7 @@ body {
 
 
 .wave {
-  font-size: 48px;
+  font-size: 3rem;
   margin-bottom: 0px;
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
   animation-duration: 4s;        /* Change to speed up or slow down */
