@@ -5,20 +5,14 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  /* mobile viewport bug fix */
   min-height: 100%;
-  /*width: 800px;*/
-  /*margin: 0px auto;*/
   font-size: 1.05rem;
-/*  font-family: 'roboto', sans-serif;*/
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   color: #2B2928;
 }
 
 .technologies {
-  /*padding-bottom: 0px;*/
-  /*margin-bottom: 0px;*/
   font-size: 1rem;
   line-height: .4;
 }
@@ -28,7 +22,6 @@ body {
 }
 
 footer {
-  /*flex-shrink: 0;*/
   text-align: center;
   padding: 8px 0px;
   font-size: .9rem;
@@ -41,7 +34,8 @@ footer {
 }
 
 .name {
-  color: #f05945;
+  color: #8c8e90;
+  font-weight: 600;
 }
 
 .project-heading:link, .project-heading:visited, .project-heading:hover {
@@ -75,11 +69,6 @@ footer {
 
 .underline {
    text-decoration: underline;
-}
-
-.project-header {
-  /*text-decoration: underline;*/
-  /*color: #1597bb;*/
 }
 
 ul.collaborators {

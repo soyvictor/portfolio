@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+<!--   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
   <title>Victor's Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
@@ -10,13 +12,15 @@
   <script src="https://kit.fontawesome.com/2ee27894e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 offset-md-2 mt-5">
       <h1 style="color: #1597bb">Projects <i class="fas fa-arrow-alt-circle-right" style=""></i> <span style="font-family: damion; color: black; padding: 4px 20px; box-shadow: .5px .5px 10px rgba(0, 0, 0, .1)">JustRide</span></h1>
-      <a href="https://justride.herokuapp.com/" class="website-link" target="_blank"><i class="fas fa-globe-americas"></i> Website</a>
+      <a href="https://justride.herokuapp.com/" class="website-link" target="_blank"><i class="fas fa-globe-americas"></i> Website (desktop only)</a>
       <a href="https://github.com/soyvictor/justride" class="website-link" target="_blank"><i class="fab fa-github"></i> Github</a>
       <h2 class="project-header">The Idea</h2>
       <p>My first project, a group project at Lewagon was to create an Airbnb type marketplace.  We could choose any idea as long as it had a booking feature.  After brainstorming for a while, I decided on motorcycles.  I hadn't ridden in 5 years and every once in a while, I'd get the urge to ride.  There was one particular motorcycle I was itching to try (the popular Kawasaki Ninja 400) but of the few rental companies I could find, none stocked it.  Surely, somebody out there would want to rent it out to me and make a bit of side money!</p>
-      <h2 class="project-header">Tech Stack</h2>
+      <h2>Tech Stack</h2>
       <!-- <p>Ruby on Rails, Javascript, Bootstrap, Cloudinary, Mapbox, Heroku</p> -->
       <div style="display: inline-block">
         <img src="./assets/logos/rails.png" alt="" class="stack-logo">
@@ -48,30 +52,24 @@
         <p style="font-size: .6rem; margin: 0; padding: 0; text-align: center;">Heroku</p>
       </div>
 
-
-
-
-
-      <h2 class="project-header">Coding & Challenges</h2>
+      <h2>Coding & Challenges</h2>
       <p>We spent the greater part of a Saturday discussing the features we would implement, approaching the project as if we were building an MVP.  The core features would be searching, booking, and a show page for each motorcycle.  Next, we mapped out our database schema so that we would have a solid foundation for approaching the backend.  Once we completed that, and given the time crunch of the bootcamp, we decided to use a tool I was already familiar with for doing low fidelity mockups: Balsamiq.  I did a mock up of our website page by page, drawing inspiration from other websites, and decided to keep the design simple and clean.  We spent a lot of time preparing before we wrote a single line of code, but this was beneficial as we had few hiccups along the way once we got to coding. </p>
       <p>I started off by building the backend and making sure that the core models, controllers, views, and database were set up and working properly, testing the CRUD actions in both the console as well as in the app.  Then I worked on the design of the homepage trying my best to make it inviting.  I find that getting the hompage done, at least a working version in the early stages of a project really fuels motivation and gives me a good sense of how I want the general design of the site to be.</p>
       <p>After the homepage, I worked on the show page and booking feature.  The part that had me scratching my head most was how to set up an "upcoming bookings" page and a "past bookings" page, both for the host (motorcycle owner) and the customer (renter).  In the end, I created additional booking controller actions to separate host bookings and client bookings, and created separate pages and tabs in the UI.  My teammate T.J. tackled the search and search results pages, integrating Mapbox's API to display search results on a map as markers.  When I finished my core tasks, I assisted T.J. by updating the UI to match with the rest of the site.  All in all, I learned a ton from doing this project and it was really our first attempt of taking everything we had learned and putting it together into a viable product.  Since this project, I've been hooked on web development. </p>
-      <h2 class="project-header">Collaborators</h2>
+      <h2>Collaborators</h2>
       <ul class="collaborators">
         <li class="collaborators">Victor Chiang, lead developer</li>
         <li class="collaborators">T.J. Zuvic, developer</li>
         <li class="collaborators">Rodrigo Sanchez, developer</li>
       </ul>
-      <p>
-      <p></p>
-      <p></p>
 
       <!-- <img src="./assets/justride.png" alt="" height="400"> -->
       <!-- https://justride.herokuapp.com/ -->
       <!-- <a href="https://justride.herokuapp.com/" class="project-heading" target="_blank">JustRide: </a><span>A peer to peer marketplace for renting motorcycles.  (Desktop only.  </span> -->
-
-
     </div>
+  </div>
+</div>
+
     <footer class="footer">© 2021 Victor Chiang</footer>
     <script src="./portfolio.js"></script>
   </body>
