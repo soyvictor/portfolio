@@ -41,7 +41,9 @@
         </div>
 
         <h2>Coding & Challenges</h2>
-        <p>Fill this in</p>
+        <p>After coding the CRUD actions, I worked on the show page, first building out the basic layout, adopting Bootstrap’s carousel, and then I started tackling each javascript dependent component.  The first JS component was the modal for displaying large photos of the item.  It’s made of an inner and an exterior modal so that when the user clicks on the outer modal, it would close.  The biggest challenge of the show page was making the thumbnails in sync with the displayed image, which required the use of many counters, classes, and event listeners. The tricky bit was allowing the user to be able to interact with both the carousel left/right arrows and hovering/clicking the thumbnails without the two actions conflicting with each other.  That is to say if a user hovers over a thumbnail, that photo becomes the displayed photo.  Subsequently, the user could then decide to use the arrows and the carousel would keep the photos in the same order.   I also had to pass the image item count via a data attribute hidden within the ruby code.  There probably is a better way to code this but with just vanilla javascript, I was pretty content to get it all working.</p>
+        <p>On the homepage where all items are displayed, I used Flexbox with wrapping for the layout and gave each item its own Bootstrap carousel.   I used javascript to create a function that would keep track of the image number and display it on its carousel as the user scrolled through the images.  In the future I would like to add in swiping for the carousel photos for better mobile support.  The bootstrap carousel has a swiping feature that can be turned on, but it only works after a user has hit one of the arrows. I didn’t like this as it could confuse the user so I turned it off altogether.  Next time, I will try to build a carousel on my own.</p>
+
       </div>
     </div>
   </div>
