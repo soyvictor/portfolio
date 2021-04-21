@@ -113,6 +113,14 @@ li.collaborators {
   line-height: 1.8rem;
 }
 
+.logo-border {
+  border: .1px solid #e1e1e1;
+}
+
+.logo-text-style {
+  font-size: .6rem; margin: 0; padding: 0; text-align: center;
+}
+
 /*!
  * Bootstrap Grid v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
