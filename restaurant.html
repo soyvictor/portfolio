@@ -19,7 +19,7 @@
               <a href="https://github.com/soyvictor/restaurant" class="website-link" target="_blank"><i class="fab fa-github"></i> Github</a>
               <p style="margin-top: 2rem"><em>This project is in development. The website link above goes to a working prototype but is not fully optimized for mobile.</em></p>
               <h2 class="project-header">The Idea</h2>
-              <p>When I was living in Mexico City, I realized that the majority of restaurants did not have a website and relied on apps like Uber Eats and Rappi for delivery, and even more so during the pandemic just to survive. A restaurant’s profit margins are so thin to begin with and to use these platforms, which can take up to a 35% cut, is pretty discouraging.  A lot of these restaurants are small operations that are family owned and operated. They could probably do deliveries on their own, but they may not have the cash flow to invest in a fully capable website.  My goal is to offer any food provider (restaurant, cafetaria, food stall vendor) a simple and inexpensive way to set up a responsive website with ordering, payments, and delivery features.</p>
+              <p>When I was living in Mexico City, I realized that the majority of restaurants there didn't have a website and relied on apps like Uber Eats and Rappi for delivery, and even more so during the pandemic just to survive. A restaurant’s profit margins are so thin to begin with and to use these platforms, which can take up to a 35% cut, must be pretty discouraging.  A lot of these restaurants are small operations that are family owned and operated. They could probably do deliveries on their own, but they may not have the cash flow to invest in a fully capable website.  My goal is to offer any food provider (restaurant, cafetaria, food stall vendor) a simple and inexpensive way to set up a responsive website with ordering, payments, and delivery features.</p>
               <h2 class="project-header">Tech Stack</h2>
               <!-- <p>Ruby on Rails, Javascript, Bootstrap, Cloudinary, Mapbox, Heroku</p> -->
               <div style="display: inline-block">
@@ -58,8 +58,18 @@
               </div>
 
               <h2 class="project-header">Coding & Challenges</h2>
-              <p>TBD</p>
-
+              <p>I wanted restaurants to be as self sufficient as possible when it comes to branding, setting up and updating their menus, and managing orders.  There may be a little bit of initial setup work to be done between me and the restaurant, but after that, they should be able to manage almost everything on their own.</p>
+              <h3>Menu</h3>
+              <p>In the project's current state, the menu is displayed on the homepage, and is built with flexbox.  I integrated the rubygem ActiveAdmin so that the restaurant has one central location for doing CRUD actions.  There, they can add menu categories and menu items, and upload photos.  They can also disable menu items.</p>
+              <p>Clicking a menu item will open a modal to let the user choose different options before adding it to their cart.  The most difficult challenge was calculating the totals according to quantity and options.  That involved adding a few attributes to the ruby code to get passed along to a javascript file and then having the submit button update their shopping cart.</p>
+              <h3>Shopping Cart</h3>
+              <p>The shopping cart took a while for me to think through and I think I even had to go back and recode it a couple of times when I realized there would be unexpected behavior.  Such as if a user got through to the final page before submitting payment but added another item in a separate tab, which would be included in the order but not charged.  It was also a challenge because a user could select different options for each item and write special notes.  So I ended up creating a model that would create an instance for every item a user added to their cart.  That way, those options, special notes, quantity and order total could be saved to the database and carried into their order history.</p>
+              <h3>Delivery and Pickup Options</h3>
+              <p>On their shopping cart, users can choose whether to order for pickup or delivery.  Initially, I wanted to put this option on the first page of checkout but ran into an issue with getting the order to update as Stripe requires a session to be created prior to generating a route for payment.  But I decided that it was probably better for the user experience to have the option be on the same page as their cart as they would not only be aware that there are two order types available but they could see their grand total as well.</p>
+              <h3>Stripe</h3>
+              <p>Integrating Stripe was a tedious process but fortunately I found a tutorial to follow. Each order has a state that is either pending or approved and via a webhook, if the payment is successful, the state gets changed to approved and all of it's items get marked as completed, clearing out the user's shopping cart.</p>
+              <h2>Final Thoughts</h2>
+              <p>There's still work to be done including testing for bugs, fixing and improving the UI, mobile optimization, creating better tools for order and delivery management, and adding authorization with Pundit. But I hope to bring it to production in the coming months and offer it to any restaurant wanting to try it out!</p>
 
 
       </div>
